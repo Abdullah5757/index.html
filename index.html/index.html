@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fenerbahçe Üniversitesi Kayıt Formu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #5100ff;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      background: rgb(225, 255, 0);
+      padding: 20px;
+      border-radius: 100px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    fieldset {
+      border: 2px solid #ccc;
+      margin-bottom: 20px;
+      padding:10px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 6px;
+    }
+    input, select, textarea {
+      margin-top: 6px;
+      width: 100%;
+      padding: 6px;
+      border-radius: 6px;
+      border: 1px solid #ffffff;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+    }
+    button {
+      background-color: #1e00ff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #459649;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fenerbahçe Üniversitesi Kayıt Formu</h1>
+  <p style="text-align:center;">Lütfen kayıt işlemi için aşağıdaki formu doldurun.</p>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Öğrenci Bilgileri</legend>
+      <label>Ad:</label>
+      <input type="text" name="ad" required>
+
+      <label>Soyad:</label>
+      <input type="text" name="soyad" required>
+
+      <label>T.C. Kimlik No:</label>
+      <input type="text" name="tc" maxlength="11" required>
+
+      <label>Doğum Tarihi:</label>
+      <input type="date" name="dogum tarihi">
+
+      <label>Tuttuğu Takım:</label>
+      <input type="text" name="Tuttuğu Takım">
+    </fieldset>
+
+    <fieldset>
+      <legend>Cinsiyet</legend>
+      <label><input type="radio" name="cinsiyet" value="Erkek"> Erkek</label>
+      <label><input type="radio" name="cinsiyet" value="Kadın"> Kadın</label>
+      <label><input type="radio" name="cinsiyet" value="Değişik"> Değişik</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Eğitim Bilgileri</legend>
+      <label>Sınıf Seçiniz:</label>
+      <select name="sinif">
+        <option>1.Sınıf</option>
+        <option>2.Sınıf</option>
+        <option>3.Sınıf</option>
+        <option>4.Sınıf</option>
+        <option>Hazırlık</option>
+      </select>
+
+      <label>Kayıt Olduğu Bölüm:</label>
+      <input type="text" name="Bölüm">
+        
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>İletişim Bilgileri</legend>
+      <label>Telefon:</label>
+      <input type="tel" name="telefon" placeholder="05xx xxx xx xx">
+
+      <label>E-posta:</label>
+      <input type="email" name="email">
+
+      <label>Adres:</label>
+      <textarea name="adres" rows="3"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Burs Oranı</legend>
+      <label><input type="checkbox" name="kulup" value="%50"> %50</label>
+      <label><input type="checkbox" name="kulup" value="%75"> %75</label>
+      <label><input type="checkbox" name="kulup" value="Burslu"> Burslu</label>
+      <label><input type="checkbox" name="kulup" value="Ücretli"> Ücretli</label>
+    </fieldset>
+
+    <div style="text-align:center;">
+      <button type="submit">Kaydı Tamamla</button>
+    </div>
+
+  </form>
+
+</body>
+</html>
